@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="CSS/MyStyle.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="ramka" class="contact_form" onsubmit="return false">
+            <h2>Калькулятор расчета калорий</h2>
+            <div class="formBox">
+                <p>
+                    <label class="cellOne">
+                        Возраст
+                        <input class="fm" type="text" id="ageUser" class="tellRequired" size="8" />
+                    </label>
+                    Рост
+                    <input type="text" id="crowthUser" class="tellRequired" size="8" />см
+                </p>
+                <p>
+                    Вес
+                    <input type="text" id="weightUser" class="tellRequired" size="8" />кг &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspПол
+                    <select name="pol" id="genderSelection" size="1">
+                        <option value="0" disabled selected>Выберите «Пол»</option>
+                        <option value="1">Мужской</option>
+                        <option value="2">Женский</option>
+                    </select>
+                </p>
+            </div>
+            <p>
+                Образ жизни
+                <select name="obraz" id="lifeStyleUser" size="1">
+                    <option value="0" disabled selected>Выберите свой «Образ жизни»</option>
+                    <option value="1.2">Сидячий</option>
+                    <option value="1.375">Небольшая активность</option>
+                    <option value="1.55">Средняя активность</option>
+                    <option value="1.725">Высокая активность</option>
+                    <option value="1.9">Очень высокая активность</option>
+                </select>
+            </p>
+            <p>
+                Результат
+                <input type="text" id="resultOfCalories" size="8" readonly />калорий
+            </p>
+            <p>
+                <button id="calc" class="bt1">Рассчитать</button>
+                <input type="reset" value="Очистить" id="clear" />
+            </p>
+        </div>
+    </body>
+    <script src="JS/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</html>

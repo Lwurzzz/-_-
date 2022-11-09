@@ -1,0 +1,30 @@
+body {
+    display: grid;
+    place-content: center;
+    text-align: left;
+    background: url(../img/stich.jpg);
+    min-height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    vertical-align: middle;
+}
+.fm {
+    margin-right: 30px;
+}
+.pol {
+    margin-left: 5px;
+}
+.abx {
+    display: flex;
+}
+.bt1 {
+    margin-right: 60px;
+    margin-left: 100px;
+}
+.ramka {
+    border: 1px solid black;
+    border-radius: 10px;
+    background: rgba(53, 119, 218, 0.5);
+}
